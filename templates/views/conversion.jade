@@ -1,0 +1,15 @@
+section(ng-controller="NumberController" class="conversion")
+  div.container
+    header
+      h1 See How Much Revenue Rainmaker’s Conversion Optimized Donation Checkout Can Generate for You!
+    div.container
+        p Let’s say your average gift size is $<input type="number" ng-model="test">and your donors make<input type="number" ng-model="donation" required>donations over their lifetime of supporting your cause. Lastly, let’s assume your current donation page converts at the industry average <input type="number" ng-model="percent" min="0" max="30">% of visitors.
+
+
+        p If<input type="number" ng-model="people" required>people visit your new Rainmaker Donation Checkout, which converts <span>30% of visitors</span>, that’s <span>{{(((30 - (percent)) / 100) * (people) ) + ' more donors'}}</span> with a combined lifetime value of <span>{{ (test) * (donation) * (30 - (percent)) }}</span>.
+
+
+    div.total-contain
+        p Could your organization use an additional <span class="total">${{ (test) * (donation) * (30 - (percent)) + ' '}}</span>?
+
+    a(href="#").btn Request Your free demo

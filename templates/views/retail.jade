@@ -1,0 +1,78 @@
+extends ../layouts/retail-site
+
+block content
+	.main(style="background-image: url(#{data.retail.headerBackgroundImage.url})")
+		header
+			p: a(href='/') &larr; back to home
+			.container
+				h1
+				.nav
+					ul
+						li Login
+						li Free Trial
+		.container.blurb
+			h3= data.retail.callToAction
+			p= data.retail.callToActionSubheading
+			a(href="#") Try it for free
+		.laptop
+			.screen
+				ul
+					li(style="background-image: url(#{data.retail.slideOne.url})").slide.slide-1
+					li(style="background-image: url(#{data.retail.slideTwo.url})").slide.slide-2
+
+	.supporting.offer
+		.container
+			span New
+			p 5 Steps to Delighting Nonprofit Supporters
+			.link-wrapper
+				a(href="#") Download our free guide now 
+				i(class="fa fa-caret-right")
+
+	.supporting.products
+		.container
+			.row
+				each feature, index in data.retail.features
+					.col-md-3
+						.row
+							.col-md-2(style="background-image: url(#{feature.featureImage.url})")
+							.col-md-10
+								h4 #{feature.featureTitle}
+						p #{feature.featureBlurb}
+						//- p #{index}
+
+	.supporting.testmonials
+		.fifty.purple(style="background-color: #{data.retail.clientBackgroundColor}")
+			h6 "#{data.retail.testmonialQuote}"
+			hr
+			p #{data.retail.client}
+			p #{data.retail.clientTitle}
+		.fifty.morethan(style="background-image: url(#{data.retail.clientBackgroundImage.url})")
+			img(src="#{data.retail.clientLogo.url}").img-responsive
+
+	.supporting.ebook
+		.container
+			.row.book-title
+				.col-sm-1.col-sm-offset-1
+					img(src="/images/book-icon.png").img-responsive
+				.col-sm-6
+					p EBOOK
+					h5 5 Steps To Delighting Nonprofit Supporters
+			.row.book-form
+				.col-md-4.col-md-offset-2
+					.book-cover
+
+				.col-md-4.book-text
+					p Customer service is one of the most easily overlooked elements of successful fundraising and donor development. Nonprofits are potentially leaving a lot of revenue and loyalty on the table by not paying attention to donor delight. In this ebook you’ll learn the 5 most importnant steps for going from failing to fantastic at donor support...
+					label DOWNLOAD EBOOK
+
+					form
+						label.email Email*
+						input(type="email", name="email")
+						input(type="submit", value="Download")
+
+	.footer
+		.container
+			.wrap
+				h2 Start Your Free Trial Now
+				p 7 days free. No credit card required.
+				a(href="#") Try it for free now!

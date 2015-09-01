@@ -1,0 +1,444 @@
+body {
+	margin: 0;
+	padding: 0;
+
+}
+.main {
+	background-image: url(../images/background-image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	padding: 38px;
+}
+header {
+	max-width: 100%;
+	height: 100px;
+	color: #fff;
+}
+
+header .container {
+	margin: 0 auto;
+	padding-top: 22px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 22px;
+	font-weight: 200;
+	letter-spacing: 7px;
+}
+
+h1:before {
+	content: url(../images/cause-logo.png);
+	position: relative;
+	top: 7px;
+	right: 13px;
+}
+
+h1, ul li {
+	text-transform: uppercase;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	padding-top: 10px;
+}
+
+
+h1 {float: left;}
+
+.nav {
+	float: right;
+}
+
+.nav li {
+	padding: 0 20px;
+	font-weight: 200;
+}
+
+.blurb {
+	text-align: center;
+	max-width: 660px;
+	margin-top: 87px;
+	text-transform: capitalize;
+}
+
+.blurb h3 {
+	font-size: 43.4px;
+	line-height: 56px;
+	font-family: "museo-slab",sans-serif;
+	font-weight: 100;
+}
+
+.blurb p {
+	font-weight: 300;
+	font-family: "proxima-nova",sans-serif;
+	font-size: 20px;
+}
+
+.blurb a {
+	background-color: #58cd97;
+	color: #fff;
+	padding: 12px 30px;
+	margin-top: 23px;
+	display: inline-block;
+	border-radius: 2px;
+	font-family: "proxima-nova",sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.laptop {
+	background-color: #000;
+	border: 2px solid #c9c9c9;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	height: 334px;
+	margin: 0 auto;
+	max-width: 600px;
+	overflow: hidden;
+	position: relative;
+	top: 38px;
+	width: 100%;
+	border-bottom: none;
+}
+
+.laptop .screen {
+	background-color: #ccc;
+	bottom: 20px;
+	left: 20px;
+	overflow: hidden;
+	position: absolute;
+	right: 20px;
+	top: 21px;
+}
+.screen { position: relative; overflow: auto; }
+    .screen li { list-style: none; padding: 0;  }
+        .screen ul li { float: left; padding: 0; }
+
+.screen ul {padding: 0;}
+
+.screen .slide {
+	padding: 162px 0px 150px 0px;
+	background-position: top center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.screen .slide-1 {
+	background-image: url(../images/glass-screen-2.png);
+	z-index: 1;
+}
+
+.screen .slide-2 {
+	background-image: url(../images/app-screen.png);
+	z-index: 0;
+
+}
+/*.macbook {
+	background-image: url(../images/mac-screen.png);
+	max-width: 760px;
+	height: 600px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.macbook .app {
+	position: absolute;
+  	top: 572px;
+	left: 392px;
+	transform: scaleX(0.99);
+}
+
+.macbook .glass {
+	position: absolute;
+  	top: 569px;
+	left: 392px;
+	-webkit-animation: app 10s ease-in infinite;
+    -webkit-animation-fill-mode: backwards;
+}*/
+
+.offer {
+	height: 85px;
+	max-width: 100%;
+	background-color: #fafafa;
+	box-shadow: -6px 1px 5px #e4e4e4;
+	font-family: "proxima-nova",sans-serif;
+
+}
+
+.offer .container {
+	display: flex;
+	padding: 23px 0 17px 0;
+	max-width: 800px;
+	font-size: 17px;
+	padding-left: 28px;
+}
+
+.offer .container span {
+	margin-right: 23px;
+	color: #fff;
+	padding: 10px 20px;
+	background-color: #199eda;
+	text-transform: uppercase;
+	font-size: 16px;
+	border-radius: 2px;
+
+}
+
+.offer .container p {
+	margin-right: 38px;
+	font-weight: 300;
+	padding-top: 10px;
+	color: #a1a4a7;
+        
+}
+
+.link-wrapper {
+	display: flex;
+}
+
+.offer .link-wrapper a {
+	font-weight: 500;
+	color: #51b5e2;
+	padding-top: 10px;
+	display: block;
+}
+
+.offer .container .fa-caret-right {
+	transform: translate(10px, 14px);
+	color: #51b5e2;
+}
+
+.products {
+	padding-top: 60px;
+	font-family: "proxima-nova",sans-serif;
+}
+
+.products .container {
+	width: 1210px;
+}
+
+/*.col-md-3 {
+	padding-right: 10px;
+}*/
+
+.col-md-3 .row {
+	margin-bottom: 45px;
+}
+
+.col-md-3 h4 {
+	padding-left: 0;
+	line-height: 26px;
+	margin-top: 0;
+}
+
+.col-md-3 p {
+	font-weight: 400;
+	color: #92969a;
+	line-height: 26px;
+	margin-bottom: 55px;
+}
+
+.col-md-3 .col-md-2 {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 20px;
+}
+
+.description {
+	margin-top: 45px;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+	.testmonials {
+		width: 100%;
+		display: table;
+		font-family: "proxima-nova-light",sans-serif;
+	}
+}
+
+.testmonials .fifty {
+	width: 50%;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 180px;
+}
+
+.testmonials .purple {
+	background-color: #7f59b4;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 3px;
+}
+
+.purple h6 {
+	font-weight: 200;
+	font-size: 22px;
+}
+
+.purple hr {
+	height: 1px;
+	border-top: 5px solid #9b79cb;
+	width: 42px;
+}
+
+.purple p {
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 12px;
+
+}
+
+.book-cover {
+	background-image: url(../images/book-cover@2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 230px 0px;
+  background-position: center;
+}
+
+.ebook .book-title {
+	margin-top: 70px;
+}
+
+.book-title h5{
+	color: #199eda;
+	font-size: 22px;
+	letter-spacing: 1px;
+  	font-weight: 300;
+  	margin:0;
+  	font-family: "museo-slab",sans-serif;
+}
+
+.book-title p {
+	color: #92969a;
+	margin:0;
+}
+
+.ebook .book-form {
+	margin-top: 45px;
+}
+
+.book-text p {
+	color: #92969a;
+	margin: 82px auto 0;
+	font-family: "proxima-nova",sans-serif;
+}
+
+.book-text label {
+	color: #199eda;
+	z-index: 3;
+	position: relative;
+	top: 24px;
+	background-color: white;
+	padding: 10px;
+	left: -12px;
+}
+
+form {
+	border: 2px solid #ddd;
+	padding: 44px 36px 33px 32px;
+}
+
+form input[name*=email] {
+	width: 100%;
+	outline: none;
+}
+
+form .email {
+	top: 0;
+	padding: 0;
+	left: 0;
+	color: #92969a;
+}
+
+form input[type*=submit] {
+	background-color: #58cd97;
+	color: #fff;
+	padding: 12px 30px;
+	margin-top: 12px;
+	display: inline-block;
+	border-radius: 2px;
+	letter-spacing: 1px;
+	border: 0;
+}
+
+.footer {
+	height: 281px;
+	max-width: 100%;
+	margin-top: 50px;
+	background-color: #199eda;
+	font-family: "proxima-nova",sans-serif;
+}
+
+.wrap {
+	max-width: 50%;
+	margin: 74px auto 0 auto;
+	text-align: center;
+	color: #fff;
+}
+
+.wrap h2 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.wrap p {
+	font-weight: 100;
+	letter-spacing: 1px;
+	color: #b9e9ff;
+}
+
+.wrap a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	background-color: #58cd97;
+	color: #fff;
+	padding: 12px 30px;
+	margin-top: 12px;
+	display: inline-block;
+	border-radius: 2px;
+	letter-spacing: 1px;
+}
+
+
+@media screen and (max-width: 992px) {
+	.offer {
+		display: none;
+	}
+	.products {
+		text-align: center;
+	}
+	.col-md-3 h4 {
+		padding-top: 10px;
+		font-size: 29px;
+	}
+	
+	.col-md-3 p {
+		font-size: 21px;
+	}
+
+	.testmonials {
+		display: block;
+	}
+	.testmonials .fifty{
+		display: block;
+		width: 100%;
+	}
+
+	.book-text p {
+		text-align: center;
+		font-size: 17px;
+	}
+}
